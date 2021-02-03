@@ -1,0 +1,257 @@
+<include src="../header/header.html"></include>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4dd71e22530389296a8f272f93e73ce6"></script>
+<section class="content location">
+    <div class="sub_visual"></div>
+    <h1 class="visualH1">LOCATION<span>오시는 길</span></h1>
+    <p>You can get all the contact information.</p>
+    
+    <div class="inner">
+        <ul class="min_menu">
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="department.html">Location</a></li>
+        </ul>
+        <article class="contact">
+            <h1>Location</h1>
+            <p>Get in touch with us.</p>
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <em>Phone</em>
+                <p>000-123-123</p>
+                <p>000-123-123</p>
+            </div>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <em>Address</em>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ipsum.</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <em>Email</em>
+                <p>example@example.com</p>
+                <p>example@example.com</p>
+            </div>
+        </article>
+        <section id="map">
+            <ul class="branch">
+                <li class="on" data-index="1"><a href="#">본점</a></li>
+                <li data-index="2"><a href="#">지점1</a></li>
+                <li data-index="3"><a href="#">지점2</a></li>
+            </ul>
+            <div class="showBox"></div>
+    
+            <ul class="traffic">
+                <li><a href="#">교통 정보량 보기</a></li>
+                <li class="on"><a href="#">교통 정보량 숨기기</a></li>
+            </ul>
+            <span>@Etudes Map</span>
+            <ul class="branchAdd">
+                <li class="on" data-index="1">본점 - 서울 중구 을지로 281</li>
+                <li data-index="2">지점1 - 서울특별시 중구 세종대로 110</li>
+                <li data-index="3">지점2 - 서울 성동구 뚝섬로 273</li>
+            </ul>
+        </section>
+        <ul class="info" >
+            <li class="on" data-index="1">
+                <div>
+                    <span>승용차</span>
+                    <p>네비게이션 : 서울 중구 을지로 281</p>
+                    <div class="left">
+                        <img src="img/car.png" alt="승용차" class="left">
+                    </div>
+                    <div class="right">
+                        <em>흥인지문, 청계6가 방면에서 장춘단로로 오는 경우</em>
+                        <p>동대문역사문화공원 사거리에서 신당역, 충무아트홀 방면으로 좌회전 → 을지로 45길로 약 200m 직진 → DDP 지하 주차장 진입</p>
+                        <em>마장역, 흥인지문 방면에서 마장로로 오는 경우</em>
+                        <p>패션몰 유어스U:us가 보이면 좌회전 → 을지로 45길로 진입 → 약 300m 직진 후 DDP 지하주차장 진입</p>
+                    </div>
+                </div>
+                <div>
+                    <span>지하철</span>
+                    <p>동대문역사문화공원역</p>
+                    <div class="left">
+                        <img src="img/subway.png" alt="지하철" class="left">
+                    </div>
+                    <div class="right">
+                        <em>동대문역사문화공원역 1번 출구 (2, 4, 5호선)</em>
+                        <p>어울림광장, 디자인장터, 살림터 지하2층 출입구, 배움터 지하2층 출입구에 가까움</p>
+                        <em>동대문역사문화공원역 2번 출구 (2, 4, 5호선)</em>
+                        <p>살림터 1층 출입구, 동대문역사문화공원 입구(갤러리 문, 지하주차장 측)에 가까움</p>
+                    </div>
+                </div>
+            </li>
+            <li data-index="2">
+                <div>
+                    <span>승용차</span>
+                    <p>네비게이션 : 서울특별시 중구 세종대로 110</p>
+                    <div class="left">
+                        <img src="img/car.png" alt="승용차" class="left">
+                    </div>
+                    <div class="right">
+                        <em>흥인지문, 청계6가 방면에서 장춘단로로 오는 경우</em>
+                        <p>동대문역사문화공원 사거리에서 신당역, 충무아트홀 방면으로 좌회전 → 을지로 45길로 약 200m 직진 → DDP 지하 주차장 진입</p>
+                        <em>마장역, 흥인지문 방면에서 마장로로 오는 경우</em>
+                        <p>패션몰 유어스U:us가 보이면 좌회전 → 을지로 45길로 진입 → 약 300m 직진 후 DDP 지하주차장 진입</p>
+                    </div>
+                </div>
+                <div>
+                    <span>지하철</span>
+                    <p>시청역</p>
+                    <div class="left">
+                        <img src="img/subway.png" alt="지하철" class="left">
+                    </div>
+                    <div class="right">
+                        <em>동대문역사문화공원역 1번 출구 (2, 4, 5호선)</em>
+                        <p>어울림광장, 디자인장터, 살림터 지하2층 출입구, 배움터 지하2층 출입구에 가까움</p>
+                        <em>동대문역사문화공원역 2번 출구 (2, 4, 5호선)</em>
+                        <p>살림터 1층 출입구, 동대문역사문화공원 입구(갤러리 문, 지하주차장 측)에 가까움</p>
+                    </div>
+                </div>
+            </li>
+            <li data-index="3">
+                <div>
+                    <span>승용차</span>
+                    <p>네비게이션 : 서울 성동구 뚝섬로 273</p>
+                    <div class="left">
+                        <img src="img/car.png" alt="승용차" class="left">
+                    </div>
+                    <div class="right">
+                        <em>흥인지문, 청계6가 방면에서 장춘단로로 오는 경우</em>
+                        <p>동대문역사문화공원 사거리에서 신당역, 충무아트홀 방면으로 좌회전 → 을지로 45길로 약 200m 직진 → DDP 지하 주차장 진입</p>
+                        <em>마장역, 흥인지문 방면에서 마장로로 오는 경우</em>
+                        <p>패션몰 유어스U:us가 보이면 좌회전 → 을지로 45길로 진입 → 약 300m 직진 후 DDP 지하주차장 진입</p>
+                    </div>
+                </div>
+                <div>
+                    <span>지하철</span>
+                    <p>서울숲역</p>
+                    <div class="left">
+                        <img src="img/subway.png" alt="지하철" class="left">
+                    </div>
+                    <div class="right">
+                        <em>동대문역사문화공원역 1번 출구 (2, 4, 5호선)</em>
+                        <p>어울림광장, 디자인장터, 살림터 지하2층 출입구, 배움터 지하2층 출입구에 가까움</p>
+                        <em>동대문역사문화공원역 2번 출구 (2, 4, 5호선)</em>
+                        <p>살림터 1층 출입구, 동대문역사문화공원 입구(갤러리 문, 지하주차장 측)에 가까움</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <h2>Location Banner</h2>
+        <div id="loBanner">
+            <ul class="list">
+                <li>
+                    <a href="#"></a>
+                    <em>January Place</em>
+                    <span>VIEW MORE DETAIL</span>
+                    <div class="svgWrap">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <em>February Place</em>
+                    <span>VIEW MORE DETAIL</span>
+                    <div class="svgWrap">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <em>March Place</em>
+                    <span>VIEW MORE DETAIL</span>
+                    <div class="svgWrap">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <em>April Place</em>
+                    <span>VIEW MORE DETAIL</span>
+                    <div class="svgWrap">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <em>May Place</em>
+                    <span>VIEW MORE DETAIL</span>
+                    <div class="svgWrap">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <em>June Place</em>
+                    <span>VIEW MORE DETAIL</span>
+                    <div class="svgWrap">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <em>July Place</em>
+                    <span>VIEW MORE DETAIL</span>
+                    <div class="svgWrap">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <em>Agust Place</em>
+                    <span>VIEW MORE DETAIL</span>
+                    <div class="svgWrap">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <em>September Place</em>
+                    <span>VIEW MORE DETAIL</span>
+                    <div class="svgWrap">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"></a>
+                    <em>October Place</em>
+                    <span>VIEW MORE DETAIL</span>
+                    <div class="svgWrap">
+                        <svg>
+                            <rect></rect>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+    
+            <a href="#" class="prev"><img src="img/btnPrev.png" alt=""></a>
+            <a href="#" class="next"><img src="img/btnNext.png" alt=""></a>
+            
+        </div>
+        <a href="#" class="bottomA">View More</a>
+    </div>
+    
+</section>
+
+
+<script src="js/sub/location/location.js"></script>
+<script src="js/sub/location/location_banner.js"></script>
+
+<include src="../footer/footer.html"></include>

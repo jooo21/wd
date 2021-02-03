@@ -1,0 +1,115 @@
+#visual {
+    width:100%;height:1000px;background:#f2f2f2;padding-bottom:100px;
+    .inner{
+        width:1700px;height:100%;margin:0px auto;position:relative;
+        #tab{
+            width:100%;height:100%;position:absolute;top:0%;left:0%; overflow: hidden;
+            .boxs{
+                width:100%;height:100%;position:relative;
+                >p{
+                    font: 400 80px/1.3 'Inter';
+                    color:#f2f2f2b0;letter-spacing:-3px;
+                    position:absolute;z-index:2;
+                    top:30%;left:16%;
+                }
+                >div{
+                    width:100%; height:100%;display:none;
+                    filter: brightness(50%);
+                    position:absolute;
+                    left:0px; top:0px;
+                    transition:0.5s;
+                    video {
+                    height:100%;
+                    }
+                    &#tab1 {
+                        display:block;
+                    }
+                }
+                #number {
+                    position:absolute;top:34%;right:20%;
+                    width:200px; height:60px;
+                    padding:3px; box-sizing: border-box;overflow:hidden;
+                    
+                    span{
+                        font: 400 60px/1 'Space Grotesk', sans-serif;
+                        color:#f2f2f2;float:left;
+                        display:block;transform: translateY(-1%);
+                        transition: 1s;
+                        &.on1{
+                            transform:translateY(-30%);
+                        }
+                        &.on2{
+                            transform:translateY(-60%);
+                        }
+                    }
+                    p{
+                        font: 300 30px/1 'Space Grotesk', sans-serif;
+                        color:#f2f2f2;float:left;margin-left:10px;
+                    }
+                }
+            } 
+            
+            .btns {
+                width:900px;
+                height:200px;
+                position:absolute;
+                bottom:0%; right:0px;
+                ul {
+                    width:100%; height:100%;
+                    &::after {
+                        content:"";display:block; clear:both;
+                    }
+                     li {
+                        width:300px; height:100%;
+                        float: left;transition:0.5s;background:#f2f2f2;
+                        padding:50px 60px;
+                        box-sizing: border-box;
+                            a {
+                                display: block;
+                                width:100%; height:100%;
+                                
+                                
+                                span {
+                                    display: block;
+                                    font: 500 16px/1 'Space Grotesk', sans-serif;
+                                    color:#f6492b;
+                                    margin-bottom:30px;
+                                    letter-spacing:5px;
+                                }
+                                em {
+                                    display:block;
+                                    font: 300 26px/1 'Inter';
+                                    color: #222;
+                                    margin-bottom:10px;
+                                }
+                                p {
+                                    font: 200 16px/1 'Space Grotesk', sans-serif;
+                                    color: #777;
+                                }
+                                
+                            }
+                        &.on{
+                            backdrop-filter: blur(20px);
+                            background:transparent;
+                            a {
+                                p,em {
+                                    color:#f2f2f2;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                
+                
+                
+            }
+            
+        }
+        
+        
+    }
+    
+    
+}
+// @media screen 

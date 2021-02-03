@@ -1,0 +1,216 @@
+<include src="../header/header.html"></include>
+
+<section class="content members">
+    <div class="sub_visual"></div>
+    <h1 class="visualH1">MEMBERS <span>회원가입</span> </h1>
+    <p>distinctio veniam debitis quaerat alias omnis</p>
+    <div class="inner">
+        <ul class="min_menu">
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="department.html">Members</a></li>
+        </ul>
+        <h1 class="innerH1">Members</h1>
+        <section id="memcon"></section>
+        <div class="left">
+            <h1>약관동의</h1>
+            <form action="result.html" method="post">
+                <fieldset>
+                    <legend class="hidden">회원가입 약관동의</legend>
+                    <div class="checkbox_group">
+                        <p>
+                            <input type="checkbox" name="check" id="agree"><label for="agree"><span>전체동의</span></label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="check" id="agree2" ><label for="agree2"><span>회원이용 약관 (필수)</span></label>
+                            <!-- <a href="#">
+                                <i class="fas fa-angle-right"></i>
+                            </a> -->
+                        </p>
+                        <p>
+                            <input type="checkbox" name="check" id="agree3"><label for="agree3"><span>개인정보 처리방침 (필수)</span></label>
+                            <!-- <a href="#">
+                                <i class="fas fa-angle-right"></i>
+                            </a> -->
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="check" id="agree4"><label for="agree4"><span>개인정보 수집 및 이용 (필수)</span></label>
+                            <!-- <a href="#">
+                                <i class="fas fa-angle-right"></i>
+                            </a> -->
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="check1" id="agree5"><label for="agree5"><span>이메일 마케팅 수신 동의 (선택)</span></label>
+                        </p>
+                        
+                        <p>
+                            <input type="checkbox" name="check1" id="agree6"><label for="agree6"><span>SNS마케팅 수신 동의(선택)</span></label>
+                        </p>
+                        <p class="alert">필수 동의가 모두 체크되지 않았습니다.</p>
+                        <p>정보수신에 동의하지 않아도 정상적인 서비스 이용이 가능합니다. 거래 정보, 결제/교환/환불 등과 관련된 내용은 거래 안전을 위하여 수신동의 여부와 관계없이 발송됩니다. </p>
+                    </div>
+                    
+                </fieldset>
+            </form>
+            <div class="leftBottom">
+                
+            </div>
+        </div>
+        <div class="right">
+        <h1>필수 정보 입력</h1>
+        <fieldset>
+            <legend class="hidden">
+            회원가입 필수정보 입력</legend>
+            <table summary="회원의 이메일, 비밀번호, 이름, 생년월일, 핸드폰번호 입력 폼">
+                <caption class="hidden">
+                    회원가입 필수 정보 입력 양식 테이블
+                </caption>
+                <tr>
+                    <th scope="row">
+                        <label for="id">E-mail</label>
+                    </th>
+                    <td>
+                        <input type="text" name ="id" id="id" placeholder="이메일 아이디를 입력해주세요.">
+                        <p class="idMail"></p>
+                        <select name="id" id="id" >
+                            <option value="">직접입력</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="hotmail.com">hotmail.com</option>
+                        </select>
+                        <a href="#">중복확인</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="pwd1" >비밀번호</label>
+                    </th>
+                    <td>
+                        <input type="password" name="pwd1" id="pwd1" placeholder="숫자, 문자, 특수문자를 포함한 5글자 이상 10글자 미만으로 입력해주세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="pwd2">비밀번호 확인</label>
+                    </th>
+                    <td>
+                        <input type="password" name="pwd2" id="pwd2" placeholder="한 번더 입력해주세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="name">이름</label>
+                    </th>
+                    <td>
+                        <input type="text" name="name" id="name" placeholder="이름을 입력해 주세요">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="birth">생년월일 8자 ex.1980.08.08</label>
+
+                    </th>
+                    <td>
+                        <input type="text" name="birth" id="birth" placeholder="생년월일을 입력해주세요.">
+                        <p>가입은 만 14세 이상 고객만 가능합니다.</p>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="gender">성별</label>
+                    </th>
+                    <td>
+                        <select name="gender" id="gender">
+                            <option value="">성별을 선택해주세요.</option>
+                            <option value="male">남</option>
+                            <option value="female">여</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="phone">핸드폰 번호 ex.010-1234-1234</label>
+                    </th>
+                    <td>
+                        <input type="text" name="phone" id="phone" placeholder="핸드폰 번호를 입력해주세요.">
+                        <a href="#">중복확인</a>
+                    </td>
+                </tr>
+                                   
+            </table>
+
+
+
+        </fieldset>
+        <h2>선택 정보 입력</h2>
+        <fieldset>
+            <legend class="hidden">선택 정보 입력</legend>
+            <table summary="결혼여부 가입경로 선택사항 입력폼">
+                <caption class="hidden">결혼여부 가입경로 선택사항 입력폼</caption>
+                <tr>
+                    <th scope="row">
+                        <label for="marriage">결혼여부</label>
+                    </th>
+                    <td>
+                        <select name="marriage" id="marriage">
+                            <option value="">결혼여부를 선택해주세요.</option>
+                            <option value="미혼">미혼</option>
+                            <option value="기혼">기혼</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="anniver">기념일 8자</label>
+                    </th>
+                    <td>
+                        <input type="text" name="anniver" id="anniver" placeholder="기념일을 입력해주세요.">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label for="route">가입경로</label>
+                    </th>
+                    <td>
+                        <p class="alert">가입경로가 체크되지 않았습니다.</p>
+                        <div>
+                            <input type="radio" name="route" value="검색" id="검색">
+                            <label for="검색">검색</label>
+                            
+                        </div>
+                        <div>
+                            <input type="radio" name="route" value="페이스북" id="페이스북">
+                            <label for="페이스북">페이스북</label>
+                            
+                        </div>
+                        <div>
+                            <input type="radio" name="route" value="주변 추천" id="주변 추천">
+                            <label for="주변 추천">주변 추천</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="route" value="기타" id="기타">
+                            <label for="기타">기타</label>
+                        </div>
+                        <div>
+                            <label for="기타" class="hidden"></label>
+                            <input type="text" name="route" placeholder="내용을 입력해주세요.">
+                        </div>
+                    </td>
+                </tr>
+                <div class="submitBox">
+                    <div class="white"></div>
+                    <input type="submit" value="동의하고 가입하기">
+                </div>
+            </table> 
+            
+        </fieldset>
+        </div>
+    </div>
+</section>
+
+<include src="../footer/footer.html"></include>

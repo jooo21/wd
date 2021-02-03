@@ -1,0 +1,46 @@
+#scrollNavi {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+
+    li {
+        margin: 30px 0px;
+
+        a {
+            display: block;
+            width: 13px;
+            height: 15px;
+           
+            position:relative;
+            &::after {
+                content:"";display:block;
+                width:13px;height:1px;
+                background:#ada699;transition: 0.5s;
+                position:absolute;left:50%;top:50%;
+                transform: translate(-50%,-50%); 
+            }
+            span{
+                font:300 12px/1 "Jost"; color:#d8691e;
+                position:absolute;left:0%;top:50%;
+                transform: translate(0%,-50%);transition: 0.5s;
+                opacity:0;
+                &::before {
+                    content:"";
+                }   
+            }
+            
+            &.on {
+                &::after{
+                    background:#d8691e;
+                }
+                
+                span {
+                    transform: translate(-150%,-50%);
+                    opacity:1;
+                }
+            }
+        }
+    }
+}
